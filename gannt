@@ -1,0 +1,30 @@
+# Planificación del Proyecto de Construcción de Parque Eólico
+
+Este proyecto de construcción de un parque eólico se estima que tomará entre 12 y 18 meses, dependiendo de las condiciones del terreno y la disponibilidad de materiales y equipos. El plan se ha dividido en cinco fases principales para facilitar su gestión.
+
+## Fases del Proyecto
+
+| Fase                          | Duración | Descripción                                                                 |
+|-------------------------------|----------|-----------------------------------------------------------------------------|
+| **Obra civil y caminos**      | 3 meses  | Limpieza y nivelación del terreno, construcción de caminos de acceso y preparación de plataformas de montaje. |
+| **Cimentación y bases de torre** | 2 meses  | Excavación y colocación de bases de hormigón para los aerogeneradores.         |
+| **Montaje de aerogeneradores**| 2 meses  | Montaje de torres, góndolas y palas utilizando grúas de gran capacidad.         | 
+| **Obra eléctrica y subestación** | 3 meses  | Instalación de transformadores, subestación eléctrica y líneas de media tensión. |
+| **Pruebas y puesta en marcha** | 1 mes    | Pruebas de funcionamiento y conexión a la red eléctrica.                        | 
+
+## Cronograma del Proyecto
+
+```mermaid
+gantt
+    title Cronograma de Construcción del Parque Eólico
+    dateFormat  YYYY-MM-DD
+    section Obra civil y caminos
+    Limpieza y nivelación del terreno        :a1, 2024-01-01, 3m
+    section Cimentación y bases de torre
+    Excavación y bases de hormigón           :a2, after a1, 2m
+    section Montaje de aerogeneradores
+    Montaje de torres y palas                :a3, after a2, 2m
+    section Obra eléctrica y subestación
+    Instalación de transformadores y líneas  :a4, after a2, 3m
+    section Pruebas y puesta en marcha
+    Pruebas de funcionamiento y conexión     :a5, after a3, 1m
